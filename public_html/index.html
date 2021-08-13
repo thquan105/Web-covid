@@ -9,6 +9,7 @@
 </head>
 <body>
 	<header>
+		<div id="header">
 		<div class="logo">
 			<a class="btn" href="#" title="Anti_covid"><img src="images/viruss.png" alt="Anti COVID"></a>
 			<div id="search">
@@ -36,7 +37,8 @@
 					</div>
 				</li>
 			</ul>
-		</nav>			
+		</nav>
+		</div>			
 	</header>
 	<main>
 		<div class="row">
@@ -141,7 +143,7 @@
 	      				<div class="tin new-2">
 	      					<a href="https://ncov.moh.gov.vn/web/guest/-/6847426-6827">
 	      						<img src="images/new2.jpg" title="Thêm 9.667 ca nhiễm mới.">
-	      						<p class="justify">Bản tin COVID-19 tối 12/8: Hà Nội, TP HCM và 40 tỉnh thêm 9.667 ca nhiễm mới một ngày.</p>
+	      						<p class="justify">Bản tin COVID-19 tối 12/8: HN, TP HCM và 40 tỉnh thêm 9.667 ca nhiễm mới một ngày.</p>
 	      					</a>
 	      				</div>
 	      				<div class="tin new-3">
@@ -176,9 +178,9 @@
 		<div class="row"></div>
 	</main>
 	<footer>
-		
+		<div id="footer"></div>
 	</footer>
-
+	
 	<script>
 		var index = 1;
 		changeslide = function() {
@@ -190,6 +192,33 @@
 			}
 		}
 		setInterval(changeslide, 1500);
-	</script>	
+	</script>
+	<!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100071584509690");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>	
 </body>
 </html>
