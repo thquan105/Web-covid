@@ -20,7 +20,6 @@ header {
     position: relative;		
 }
 main {
-    height: 100%;
     background: #FFF;
 }
 .logo a img {
@@ -86,7 +85,7 @@ nav ul li>a:hover{
 }
 div.thke {
     width: 65%;
-    height: 216px;
+    height: 222px;
     display: inline-block;
     background: beige;
     margin: 10px 0 0 10px;
